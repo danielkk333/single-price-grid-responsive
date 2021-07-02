@@ -1,0 +1,162 @@
+@import url("fontd.css");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto";
+  font-size: 14px;
+}
+body{
+  background-color: hsl(204, 43%, 93%);
+}
+.container{
+  width: 600px;
+  height: 450px;
+  background-color: white;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+li{
+  list-style: none;
+}
+.header{
+  padding: 40px;
+}
+.header .heading{
+  font-size: 25px;
+  font-family: "roboto";
+  font-weight: 500;
+  padding-bottom: 25px;
+  color: hsl(179, 62%, 43%);
+}
+.header .subheading{
+  font-size: 18px;
+  font-family: inherit;
+  font-weight: 400;
+  padding-bottom: 15px;
+  color:hsl(71, 73%, 54%);
+}
+
+.header .description{
+  color:hsl(218, 22%, 67%);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.display-flex{
+  position: absolute;
+  bottom: 0;
+  width: 600px;
+  height: 225px;
+  display: flex;
+  justify-content: center;
+
+}
+.display-flex .left{
+  background-color: hsl(179, 62%, 43%);
+  text-align: left;
+  flex: 1;
+  padding:25px 0 40px 40px;
+  box-shadow: 0 0 0 0 rgba(0,0,0,1);
+  border-bottom-left-radius: 15px;
+
+}
+.left .title{
+  color:white;
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 15px;
+}
+.amount{
+  display: flex;
+  align-items: baseline;
+  padding-bottom: 8px;
+}
+.amount h3{
+  font-size: 27px;
+  font-weight: bold;
+  color:white;
+}
+.amount p{
+  color:white;
+  font-size: 15px;
+  font-weight: 200;
+  padding-left: 10px;
+  position:relative;
+  bottom: 5px;
+}
+.left .description{
+  color: white;
+  font-weight: 300;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+.left button{
+  width: 90%;
+  margin: auto;
+  padding: 13px 20px 13px 20px;
+  border-radius: 10px;
+  background-color: hsl(71, 73%, 54%);
+  border:1px solid hsl(71, 73%, 54%);
+  color:white;
+  font-size: 16px;
+}
+.display-flex .right{
+  flex:1;
+  padding:25px 0 40px 40px;
+  background-color: hsla(179, 62%, 43%,0.8);
+  border-bottom-right-radius: 15px;
+}
+
+.right .title{
+  color:white;
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 15px;
+}
+
+.right ul li {
+  color: white;
+  font-weight: 200;
+  letter-spacing: 1px;
+  line-height: 1.4;
+}
+@media screen and (max-width:650px){
+  .container{
+    text-align: center;
+    font-size: 12px;
+  }
+  .display-flex{
+    display: block;
+    text-align: center;
+  }
+
+  .amount{
+    display: flex;
+    justify-content: center;
+  }
+
+  .header{
+    padding-top: 50px;
+  }
+
+  .header .description{
+    width:70%;
+    margin: auto;
+  }
+
+  .display-flex .left{
+    text-align: center;
+  }
+  .left button{
+    width: 20%;
+    margin: auto;
+  }
+  .display-right{
+    text-align: center;
+  }
+}
